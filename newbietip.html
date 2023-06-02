@@ -4,61 +4,6 @@
     <title>2 face guys copypasta</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      var words = [
-          "Tianna",
-          "I can still hear everything he says",
-          "I really don't want to bother you",
-          "but can you please tell him to be",
-          "courteous?",
-        ],
-        part,
-        i = 0,
-        offset = 0,
-        len = words.length,
-        forwards = true,
-        skip_count = 0,
-        skip_delay = 15,
-        speed = 70;
-      var wordflick = function () {
-        setInterval(function () {
-          if (forwards) {
-            if (offset >= words[i].length) {
-              ++skip_count;
-              if (skip_count == skip_delay) {
-                forwards = false;
-                skip_count = 0;
-              }
-            }
-          } else {
-            if (offset == 0) {
-              forwards = true;
-              i++;
-              offset = 0;
-              if (i >= len) {
-                i = 0;
-              }
-            }
-          }
-          part = words[i].substr(0, offset);
-          console.log(part);
-          if (skip_count == 0) {
-            if (forwards) {
-              offset++;
-            } else {
-              offset--;
-            }
-          }
-          const display =
-            i === words.length - 1
-              ? `<span class='quote--highlight'>${part}<span>`
-              : part;
-          $("#word").html(display);
-        }, speed);
-      };
-
-      $(document).ready(function () {
-        wordflick();
-      });
     </script>
     <style>
       @import url(https://fonts.googleapis.com/css?family=EB+Garamond|Droid+Serif|Playfair+Display|Open+Sans+Condensed:300);
@@ -129,8 +74,30 @@
   </head>
   <body>
     <div class="quote--container">
-      <p class="quote" id="word"></p>
-      <p class="quote--author">&ndash; Some migrant from 2004 (khát nước)</p>
+      <p class="quote" id="word">
+        Trước 200 <br/>
+        Đốt vào very hard (mọi mảnh 50+ để nâng 6) <br/>
+        Và hard (farm cho các char quan trọng) <br/>
+        Event thì chỉ cần đánh hết màn, không cần đánh lấy quà (để lấy jew) <br/>
+        Vì trước 200 sẽ có newbie buff x3 drop, farm trước sau đỡ thọt <br/> 
+        Không đụng vào event nhiều vì event cũng cho exp, lên cấp nhanh đồng nghĩa với việc không được hưởng newbie buff nữa <br/>
+        P/s: Very hard và hard farm chỉ áp dụng sau khi đi hết map / đi không nổi nữa <br/>
+        1 số char nên farm từ hard map: <br/>
+        - Djeeta, Shefi (Optimal cb) <br/>
+        - Eriko (Semi optimal cb) <br/>
+        - Misaki (Turbo, counter Ayumi), Mifuyu (Counter Inori), Lima (basic tank / runner) (PVP)
+        <br/> 
+        Sau 200 <br/>
+        Đốt vào 1-10 của event (x1.5 exp) <br/>
+        Map event 1 -> 5 8 sta, 6-10 9 sta, 11-15 10 sta <br/>
+        x1.5 exp nên sẽ cho 12, 13.5 và 15 <br/>
+        Nhờ làm tròn 13.5 thành 14 nên farm map 6-10 sẽ lời hơn <br/>
+        <br/>
+        VD: <br/>
+        72 sta, 9 map 8 sta cho 108, 8 map 9 sta cho 112 -> 9 > 8 <br/>
+        90 sta, 9 map 10 sta cho 135, 10 map 9 sta cho 140 -> 9 > 10 <br/>
+      </p>
+      <p class="quote--author">&ndash; From Vpp with 💖</p>
     </div>
   </body>
 </html>
